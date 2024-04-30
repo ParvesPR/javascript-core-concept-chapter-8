@@ -18,5 +18,9 @@ var obj = {
 console.log(obj.sum(2, 2));
 
 // We can create function as need
+setTimeout(function() {
+    console.log('I created anonymous function ');
+}, 100);
+
 // We can pass function as an Arguments
 // We can return functions from another function
