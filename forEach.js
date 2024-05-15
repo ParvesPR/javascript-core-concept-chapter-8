@@ -19,3 +19,9 @@ forEach(arr, function (value, index, arr) {
     sum += value;
 })
 console.log(sum);
+
+// FIVE WILL BE ADDED TO EACH VALUE
+forEach(arr, function (value, index, arr) {
+    arr[index] = value + 5;
+})
+console.log(arr);
