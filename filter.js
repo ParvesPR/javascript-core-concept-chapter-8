@@ -8,7 +8,7 @@ var arr = [1, 5, 8, 9, 4, 6, 4, 3];
 function filtered(arr, cb) {
     var newArr = [];
     for (var x = 0; x < arr.length; x++) {
-        if (cb(arr[x], x)) {
+        if (cb(arr[x], x, arr)) {
             newArr.push(arr[x])
         }
     }
