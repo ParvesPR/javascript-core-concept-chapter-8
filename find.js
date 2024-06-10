@@ -3,3 +3,8 @@ var result = arr.find(function (value, index) {
     return value === 9;
 })
 console.log(result);
+
+var result2=arr.findIndex(function (value,index) {
+    return value===9;
+})
+console.log(result2);
