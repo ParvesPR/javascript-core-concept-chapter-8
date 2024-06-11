@@ -21,3 +21,16 @@ var findArr = myFind(arr, function (value) {
     return value === 9;
 })
 console.log(findArr);
+
+// Array find index method implementation
+function myFindIndex(arr, cb) {
+    for (var x = 0; x < arr.length; x++) {
+        if (cb(arr[x])) {
+            return x;
+        }
+    }
+}
+var findIndex = myFindIndex(arr, function (value) {
+    return value === 9;
+})
+console.log(findIndex);
