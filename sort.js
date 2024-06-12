@@ -16,7 +16,7 @@ var person = [
         "age": '23',
     },
 ]
-var arr = [1, 5, 7, 9, 3, 6, 4, 2, 17, 9, 5];
+var arr = [1, 5, 7, 9, 3, 6, 4, 2, 7, 9, 5];
 arr.sort()
 console.log(arr);
 person.sort();
@@ -49,3 +49,14 @@ person.sort(function (a, b) {
     }
 })
 console.log(person);
+
+// Every method (execute when all values match logic)
+var result1 = arr.every(function (value) {
+    return value % 2 === 0; /* return true if all values are even number */
+})
+console.log(result1);
+
+var result2 = arr.every(function (value) {
+    return value % 2 === 1; /* return true if all values are odd number */
+})
+console.log(result2);
