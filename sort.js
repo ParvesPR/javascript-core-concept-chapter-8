@@ -22,8 +22,8 @@ console.log(arr);
 person.sort();
 console.log(person);
 
+// Ascending order sorting
 arr.sort(function (a, b) {
-
     if (a > b) {
         return 1;
     }
@@ -35,3 +35,17 @@ arr.sort(function (a, b) {
     }
 })
 console.log(arr);
+
+// Ascending order sorting object
+person.sort(function (a, b) {
+    if (a.age > b.age) {
+        return 1
+    }
+    else if (a.age < b.age) {
+        return -1
+    }
+    else {
+        return 0;
+    }
+})
+console.log(person);
