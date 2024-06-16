@@ -16,7 +16,7 @@ var person = [
         "age": '23',
     },
 ]
-var arr = [1, 5, 7, 9, 3, 6, 4, 2, 7, 9, 5];
+var arr = [1, 5, 7, 9, 3, 6, 4, 2, 7, 9, 5, -2];
 arr.sort()
 console.log(arr);
 person.sort();
@@ -60,3 +60,17 @@ var result2 = arr.every(function (value) {
     return value % 2 === 1; /* return true if all values are odd number */
 })
 console.log(result2);
+
+// Some method (execute when match at least one value)
+var result3 = arr.some(function (value) {
+    return value % 2 == 0; /* return true if at least one value is even number */
+})
+console.log(result3);
+var result4 = arr.some(function (value) {
+    return value % 2 == 1; /* return true if at least one value is odd number */
+})
+console.log(result4);
+var result5 = arr.some(function (value) {
+    return value <= 0 /* return true if at least one value is negative number */
+})
+console.log(result5);
