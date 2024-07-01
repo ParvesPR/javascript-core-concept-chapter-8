@@ -15,3 +15,12 @@ function sum(n) {
     return n + sum(n - 1);
 }
 console.log(sum(5));
+
+// Factorial using recursive
+function facto(n) {
+    if (n == 1) {
+        return 1;
+    }
+    return n * facto(n - 1)
+}
+console.log(facto(5));
