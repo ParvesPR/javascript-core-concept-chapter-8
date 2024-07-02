@@ -24,3 +24,14 @@ function facto(n) {
     return n * facto(n - 1)
 }
 console.log(facto(5));
+
+// Summation an array
+var arr = [1, 2, 3, 4, 5];
+function sumArr(arr, lastIndex) {
+    if (lastIndex < 0) {
+        return 0;
+    }
+    return arr[lastIndex] + sumArr(arr, lastIndex - 1);
+}
+var result = sumArr(arr, arr.length - 1)
+console.log(result);
